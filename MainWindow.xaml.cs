@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Registro.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Registro
 {
    
@@ -25,7 +27,8 @@ namespace Registro
 
         private void buscarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Estudiantes es = new Estudiantes();
+            
         }
 
         private void nuevoButton_Click(object sender, RoutedEventArgs e)
@@ -35,7 +38,7 @@ namespace Registro
 
         private void guardarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void eliminarButton_Click(object sender, RoutedEventArgs e)
