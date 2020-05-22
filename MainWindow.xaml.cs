@@ -43,10 +43,17 @@ namespace Registro
         {
             bool valido = true;
 
-            if(nombreTextBox.Text.Length == 0 || nombreTextBox.Text.Length < 2)
+            if(nombreTextBox.Text.Length == 0 || telefonoTextBox.Text.Length ==  0 || 
+                direccionTextBox.Text.Length == 0 || idTextBox.Text.Length == 0 || cedulaTextBox.Text.Length == 0 || fechaNDatePicker.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Verifique que haya introducido un nombre valido", "Fallo",
+                MessageBox.Show("Verifique que todos los campos esten llenos.", "Fallo",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else if (nombreTextBox.Text.Length == 0 || nombreTextBox.Text.Length < 2)
+            {
+                valido = false;
+                MessageBox.Show("Verifique que haya introducido un nombre valido.", "Fallo",
                     MessageBoxButton.OK, MessageBoxImage.Warning);
             }
 
