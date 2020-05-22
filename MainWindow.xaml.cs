@@ -27,7 +27,6 @@ namespace Registro
 
         private void buscarButton_Click(object sender, RoutedEventArgs e)
         {
-            Estudiantes es = new Estudiantes();
             
         }
 
