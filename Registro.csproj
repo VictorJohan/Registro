@@ -53,7 +53,7 @@
 
   <ItemGroup>
     <None Update="DATA\RegistroEstudiante.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
