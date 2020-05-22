@@ -131,6 +131,7 @@ namespace Registro.BLL
             try
             {
                 estudiante = contexto.Estudiantes.Find(id);
+                
             }
             catch (Exception)
             {

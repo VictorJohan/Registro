@@ -14,7 +14,7 @@ namespace Registro.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source= DATA\Registro.db");
+            optionsBuilder.UseSqlite(@"Data Source= DATA\RegistroEstudiante.db");
         }
     }
 }

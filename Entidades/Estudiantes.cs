@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+
 namespace Registro.Entidades
 {
     public class Estudiantes
@@ -12,6 +13,6 @@ namespace Registro.Entidades
         public string Telefono { get; set; }
         public string Cedula { get; set; }
         public string Direccion { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; } = DateTime.Now;
     }
 }

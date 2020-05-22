@@ -10,7 +10,7 @@
         <StackPanel Orientation="Vertical" Margin="10,10,10,10">
             <StackPanel Orientation="Horizontal">
                 <Label Content="Id" FontSize="14" FontWeight="Bold"/>
-                <TextBox Name="idTextBox" Width="45" Height="20" Margin="97,0,40,0"/>
+                <TextBox Name="idTextBox" Text="{Binding EstudianteId}" Width="45" Height="20" Margin="97,0,40,0"/>
 
                 <Button Name="buscarButton" Width="60" Height="20" HorizontalContentAlignment="Left" Margin="-17,0,0,0" Click="buscarButton_Click">
                     <StackPanel Orientation="Horizontal">
@@ -19,30 +19,30 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
-
+            <!--"{Binding Nombres}"-->
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0" >
                 <Label Content="Nombre" FontWeight="Bold"/>
-                <TextBox Name="nombreTextBox" Width="200" Height="20" Margin="64,0,30,0"/>
+                <TextBox Name="nombreTextBox" Text="{Binding Nombre}" Width="200" Height="20" Margin="64,0,30,0"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                 <Label Content="Telefono" FontWeight="Bold"/>
-                <TextBox Name="telefonoTextBox" Width="200" Height="20" Margin="62,0,30,0"/>
+                <TextBox Name="telefonoTextBox" Text="{Binding Telefono}" Width="200" Height="20" Margin="62,0,30,0"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                 <Label Content="Cedula" FontWeight="Bold"/>
-                <TextBox Name="cedulaTextBox" Width="200" Height="20" Margin="73,0,30,0"/>
+                <TextBox Name="cedulaTextBox" Text="{Binding Cedula}" Width="200" Height="20" Margin="73,0,30,0"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                 <Label Content="Direccion" FontWeight="Bold"/>
-                <TextBox Name="direccionTextBox" Width="200" Height="20" Margin="59,0,30,0"/>
+                <TextBox Name="direccionTextBox" Text="{Binding Direccion}" Width="200" Height="20" Margin="59,0,30,0"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                 <Label Content="Fecha Nacimiento" FontWeight="Bold"/>
-                <DatePicker Name="fechaNDatePicker" Width="200" Height="20" Margin="12,0,30,0" Padding="2,-1,2,2"/>
+                <DatePicker Name="fechaNDatePicker" SelectedDate="{Binding FechaNacimiento}" Width="200" Height="20" Margin="12,0,30,0" Padding="2,-1,2,2"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="8,50,0,0" Width="245" >
